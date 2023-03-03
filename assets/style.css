@@ -1,15 +1,47 @@
+:root {}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
+    background-color: #dcf8ec;
+}
+
+.banner {
+    background-image: radial-gradient(#33d48c 2px, transparent 2px), radial-gradient(#33d48c 2px, transparent 2px);
+    background-size: 18px 18px;
+    background-position: 0 0, 9px 9px;
+    background-color: #dcf8ec;
+    height: 300px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 nav {
     width: 100%;
     margin-bottom: 5em;
+    font-family: 'Kristi', cursive;
+    background-color: #88E6BC;
+    height: 50px;
+    color: salmon;
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
+    margin-top: 0;
+    padding-top: 3rem;
+    font-size: 100px;
+    color: #33D48C;
+    /* this is a google font*/
+    font-family: 'Tilt Warp', cursive;
+    vertical-align: middle;
 }
 
 ul {
@@ -17,10 +49,16 @@ ul {
     width: 90%;
     display: flex;
     justify-content: space-between;
+    color: salmon;
 
 }
 
-li {}
+li {
+    font-size: 25px;
+    font-family: 'Tilt Warp', cursive;
+    padding: 10px;
+    color: salmon;
+}
 
 .about {
     width: 97%;
@@ -73,6 +111,8 @@ td img {
 
 h2 {
     padding-left: 2em;
+    font-size: 25px;
+    font-family: 'Tilt Warp', cursive;
 }
 
 .worksection {
@@ -81,6 +121,14 @@ h2 {
     margin-bottom: 2em;
     margin-left: 1em;
     margin-right: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.featuredapp {
+    height: 300px;
+    width: 100%;
+    border: 1px solid black;
 }
 
 .workdiv {
@@ -91,7 +139,48 @@ h2 {
 }
 
 .workdiv img {
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 240px;
     border: 1px solid black;
+}
+
+@media screen and (max-width:768px) {
+    .workdiv {
+        float: none;
+        flex-direction: column;
+        margin-bottom: 2px
+    }
+
+    .featuredapp {}
+}
+
+/* double check all these things below */
+
+
+@media screen and (max-width:413px) {
+    .workdiv {
+        float: none;
+        flex-direction: column;
+        margin-bottom: 2px
+    }
+}
+
+@media screen and and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    .workdiv {
+        float: none;
+        flex-direction: column;
+        margin-bottom: 2px
+    }
+}
+
+@media screen and (max-width:126px) {
+    .workdiv {
+        float: none;
+        flex-direction: column;
+        margin-bottom: 2px
+            /*
+            position: relative;
+            width: 100%;
+            margin: auto; */
+    }
 }
