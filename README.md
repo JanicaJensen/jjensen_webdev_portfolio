@@ -27,7 +27,7 @@ Something to note is that there are pseudo classes on the 3 gallery apps to make
 * Janica Jackson Jensen 
 
 ## Errors and bugs
-
+ 
 -  No footer is included due to the fact that there is nothing I could possibly put there. 
 - The form doesn't actually work, it's decorative. Once I know how to make it work, I will. We have not yet hit that part of the curriculum. 
 - The Horiseon logo with the actual horizon/sun isn't real. 
