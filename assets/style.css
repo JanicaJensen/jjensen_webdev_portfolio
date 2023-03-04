@@ -113,7 +113,6 @@ td img {
 .about p {
     padding-left: 3em;
     padding-bottom: 2em;
-    ;
     padding-top: 0;
     font-size: 30px;
     font-family: 'Sarabun', sans-serif;
@@ -121,17 +120,16 @@ td img {
 }
 
 h2 {
-    padding-left: 2em;
-    padding-top: 1em;
-    font-size: 50px;
+    /*padding-left: 2em;
+    padding-top: 1em;*/
+    font-size: 60px;
     font-family: 'Tilt Warp', cursive;
     color: #F87777;
-    border: 1px solid black;
+    text-align: center;
 }
 
 .worksection {
     width: 97%;
-    border: 1px solid black;
     margin-bottom: 2em;
     margin-left: 1em;
     margin-right: 2em;
@@ -142,7 +140,6 @@ h2 {
 .featuredapp {
     height: 300px;
     width: 100%;
-    border: 1px solid black;
 }
 
 .workdiv {
@@ -160,32 +157,29 @@ h2 {
 .workdiv img {
     width: 300px;
     height: 300px;
-    border: 1px solid black;
 }
 
 .contact {
     width: 97%;
-    border: 1px solid black;
     margin-bottom: 2em;
     margin-left: 1em;
     margin-right: 2em;
 }
 
+.contactsection {
+    display: flex;
+}
 
 form {
     display: flex;
     flex-direction: column;
     font-family: var(--contentfont);
     font-size: 30px;
-    padding-left: 2rem;
+    padding-left: 7rem;
     padding-bottom: 1rem;
 }
 
-.contactsection {
-    display: flex;
-    border: 1px solid black;
 
-}
 
 .contactsectionright {
     display: flex;
@@ -193,7 +187,6 @@ form {
     width: 50%;
     text-align: center;
     justify-content: center;
-    ;
 }
 
 label {
@@ -234,7 +227,6 @@ button:hover {
 
 .rightsection ul li {
 
-    border: solid 1px black;
 
 }
 
@@ -246,7 +238,13 @@ button:hover {
         margin-bottom: 2px
     }
 
-    .featuredapp {}
+    .contactsection {
+        float: center;
+        flex-direction:column;
+    }
+    .contactsectionright {
+        float:center;
+    }
 }
 
 /* double check all these things below */
