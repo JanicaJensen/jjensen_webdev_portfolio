@@ -23,7 +23,7 @@ h1 {
     /* this is a google font*/
     font-family: 'Tilt Warp', cursive;
     vertical-align: middle;
-    
+
 }
 
 .banner {
@@ -98,7 +98,7 @@ li {
 .about p {
     padding-left: 3em;
     padding-bottom: 2em;
-    padding-top: 0;
+    padding-top: 3rem;
     font-size: 30px;
     font-family: 'Sarabun', sans-serif;
     width: 60%;
@@ -145,7 +145,7 @@ h2 {
 }
 
 .contact {
-    width:100%;
+    width: 100%;
     margin-bottom: 2em;
     margin-left: 1em;
     margin-right: 2em;
@@ -221,7 +221,7 @@ button:hover {
 }
 
 a:hover {
-    color:var(--hover)
+    color: var(--hover)
 }
 
 
@@ -234,11 +234,13 @@ a:hover {
 
     .contactsection {
         float: center;
-        flex-direction:column;
+        flex-direction: column;
     }
+
     .contactsectionright {
-        float:center;
+        float: center;
     }
+
     .about div {
         flex-direction: column;
     }
@@ -256,10 +258,11 @@ a:hover {
 
     .contactsection {
         float: center;
-        flex-direction:column;
+        flex-direction: column;
     }
+
     .contactsectionright {
-        float:center;
+        float: center;
     }
 
     .about div {
@@ -286,5 +289,7 @@ a:hover {
             position: relative;
             width: 100%;
             margin: auto; */
-    }
-} */
+}
+}
+
+*/
