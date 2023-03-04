@@ -4,15 +4,18 @@
     --hover: #eff6e0;
     --lightblue: #598392;
 }
+
 /* This will make the scroll effect natural, though GitHub pages didn't let it work on my last project*/
 html {
     scroll-behavior: smooth;
 }
+
 /* Setting background color and margin*/
 body {
     margin: 0;
     background-color: #dcf8ec;
 }
+
 /* Styles the h1 tag- the site title*/
 h1 {
     text-align: center;
@@ -30,8 +33,10 @@ h1 {
 /*Sets the background image for the banner which is behind the site title, 
 commented out is the original css pattern I had in the background. I'd like to keep it there for now.  */
 .banner {
+    background-image: url(/assets/bannerbackground2.png);
+    background-repeat: repeat-y;
+    background-size: cover;
     /*background-image: radial-gradient(#33d48c 2px, transparent 2px), radial-gradient(#33d48c 2px, transparent 2px);*/
-    background-image: url("");
     /*background-size: 18px 18px;*/
     /*background-position: 0 0, 9px 9px;*/
     /*background-color: #dcf8ec;*/
@@ -145,6 +150,7 @@ h2 {
     width: 300px;
     height: 300px;
 }
+
 /*Sets dimensions for the featured app img*/
 .featuredapp {
     height: 300px;
@@ -169,6 +175,7 @@ h2 {
 .contactsection {
     display: flex;
 }
+
 /*styles the form in the Contact section*/
 form {
     display: flex;
@@ -230,8 +237,8 @@ a:hover {
     color: var(--hover)
 }
 
- .specialimg:hover{
-    transform:scale(1.5);
+.specialimg:hover {
+    transform: scale(1.5);
 }
 
 /*This here attempts to optimize the site for different screen widths*/
@@ -279,5 +286,3 @@ a:hover {
         flex-direction: column;
     }
 }
-
-
