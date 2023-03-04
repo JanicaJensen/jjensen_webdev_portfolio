@@ -1,18 +1,19 @@
+/* Some color and font options are kept here at root*/
 :root {
     --contentfont: 'Sarabun', sans-serif;
     --hover: #eff6e0;
     --lightblue: #598392;
 }
-
+/* This will make the scroll effect natural, though GitHub pages didn't let it work on my last project*/
 html {
     scroll-behavior: smooth;
 }
-
+/* Setting background color and margin*/
 body {
     margin: 0;
     background-color: #dcf8ec;
 }
-
+/* Styles the h1 tag- the site title*/
 h1 {
     text-align: center;
     margin-bottom: 1em;
@@ -26,6 +27,8 @@ h1 {
 
 }
 
+/*Sets the background image for the banner which is behind the site title, 
+commented out is the original css pattern I had in the background. I'd like to keep it there for now.  */
 .banner {
     /*background-image: radial-gradient(#33d48c 2px, transparent 2px), radial-gradient(#33d48c 2px, transparent 2px);*/
     background-image: url("bannerbackground2.png");
@@ -37,11 +40,13 @@ h1 {
 
 }
 
+/* Makes sure the links don't show up as an ugly color*/
 a {
     text-decoration: none;
     color: #01161e;
 }
 
+/* Styles the nav bar*/
 nav {
     width: 100%;
     margin-bottom: 2em;
@@ -51,14 +56,13 @@ nav {
 }
 
 
-
+/* Styles the list that makes up the nav bar */
 ul {
     list-style: none;
     width: 90%;
     display: flex;
     justify-content: space-between;
     color: salmon;
-
 }
 
 li {
@@ -68,7 +72,17 @@ li {
     color: salmon;
 }
 
-/* You had width at 97%, a border, marginb 2em, marginL 1em, MarginR 2em*/
+/*styles all h2s over the body sections*/
+h2 {
+    /*padding-left: 2em;
+    padding-top: 1em;*/
+    font-size: 60px;
+    font-family: 'Tilt Warp', cursive;
+    color: #124559;
+    text-align: center;
+}
+
+/* styles elements in the About section*/
 .about {
     width: 100%;
     margin-bottom: 0;
@@ -89,12 +103,6 @@ li {
     padding-left: 6rem;
 }
 
-
-
-.work p {
-    padding: 1em;
-}
-
 .about p {
     padding-left: 3em;
     padding-bottom: 2em;
@@ -104,14 +112,12 @@ li {
     width: 60%;
 }
 
-h2 {
-    /*padding-left: 2em;
-    padding-top: 1em;*/
-    font-size: 60px;
-    font-family: 'Tilt Warp', cursive;
-    color: #124559;
-    text-align: center;
+/*Styles elements in the Work section*/
+
+.work p {
+    padding: 1em;
 }
+
 
 .worksection {
     width: 97%;
@@ -122,10 +128,6 @@ h2 {
     flex-direction: column;
 }
 
-.featuredapp {
-    height: 300px;
-    width: 100%;
-}
 
 .workdiv {
     display: flex;
@@ -143,7 +145,13 @@ h2 {
     width: 300px;
     height: 300px;
 }
+/*Sets dimensions for the featured app img*/
+.featuredapp {
+    height: 300px;
+    width: 100%;
+}
 
+/* Styles the Contact section*/
 .contact {
     width: 100%;
     margin-bottom: 2em;
@@ -161,7 +169,7 @@ h2 {
 .contactsection {
     display: flex;
 }
-
+/*styles the form in the Contact section*/
 form {
     display: flex;
     flex-direction: column;
@@ -171,8 +179,6 @@ form {
     padding-bottom: 1rem;
 }
 
-
-
 .contactsectionright {
     display: flex;
     float: right;
@@ -181,6 +187,7 @@ form {
     justify-content: center;
 }
 
+/*Styles the lables, inputs, and button of the form WITHIN the Contactsection*/
 label {
     padding-bottom: 1rem;
     padding-top: 1rem;
@@ -206,16 +213,15 @@ button {
 }
 
 
-
+/*Styles the right side of the Contact section since it is in 2 columns*/
 .rightsection p {
     font-family: var(--contentfont);
     font-size: 30px;
     text-align: center;
     font-weight: bold;
-
-    /*padding-left:15rem;*/
 }
 
+/*These are some pseudo elements for hover effects*/
 button:hover {
     color: var(--hover);
 }
@@ -228,7 +234,7 @@ a:hover {
     transform:scale(1.5);
 }
 
-
+/*This here attempts to optimize the site for different screen widths*/
 @media screen and (max-width:768px) {
     .workdiv {
         float: none;
@@ -250,7 +256,7 @@ a:hover {
     }
 }
 
-/* double check all these things below */
+/* This is an attempt to optimize for phone screen width*/
 
 
 @media screen and (max-width:387px) {
@@ -275,25 +281,3 @@ a:hover {
 }
 
 
-/*
-@media screen and and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-    .workdiv {
-        float: none;
-        flex-direction: column;
-        margin-bottom: 2px
-    }
-}
-
-@media screen and (max-width:126px) {
-    .workdiv {
-        float: none;
-        flex-direction: column;
-        margin-bottom: 2px
-            /*
-            position: relative;
-            width: 100%;
-            margin: auto; */
-}
-}
-
-*/
