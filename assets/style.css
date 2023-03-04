@@ -25,7 +25,7 @@ a {
 
 nav {
     width: 100%;
-    margin-bottom: 5em;
+    margin-bottom: 2em;
     font-family: 'Kristi', cursive;
     background-color: #88E6BC;
     height: 50px;
@@ -60,12 +60,26 @@ li {
     color: salmon;
 }
 
+/* You had width at 97%, a border, marginb 2em, marginL 1em, MarginR 2em*/
 .about {
-    width: 97%;
-    border: 1px solid black;
-    margin-bottom: 2em;
-    margin-left: 1em;
-    margin-right: 2em;
+    width: 100%;
+    /*border: 1px solid black;*/
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    background-color: #88E6BC;
+
+}
+
+.about div {
+    display: flex;
+}
+
+.about img {
+    height: 400px;
+    padding-right: 2rem;
+    padding-left: 6rem;
 }
 
 /*
@@ -106,13 +120,22 @@ td img {
 }
 
 .about p {
-    padding: 1em;
+    padding-left: 3em;
+    padding-bottom: 2em;
+    ;
+    padding-top: 0;
+    font-size: 30px;
+    font-family: 'Sarabun', sans-serif;
+    width: 60%;
 }
 
 h2 {
     padding-left: 2em;
-    font-size: 25px;
+    padding-top: 1em;
+    font-size: 50px;
     font-family: 'Tilt Warp', cursive;
+    color: #F87777;
+    border: 1px solid black;
 }
 
 .worksection {
@@ -138,9 +161,14 @@ h2 {
     margin-bottom: 2em;
 }
 
+.workdiv p {
+    font-family: 'Tilt Warp', cursive;
+    font-size: 20px;
+}
+
 .workdiv img {
-    width: 240px;
-    height: 240px;
+    width: 300px;
+    height: 300px;
     border: 1px solid black;
 }
 
