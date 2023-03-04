@@ -1,4 +1,6 @@
-:root {}
+:root {
+    --contentfont: 'Sarabun', sans-serif;
+}
 
 html {
     scroll-behavior: smooth;
@@ -26,7 +28,6 @@ a {
 nav {
     width: 100%;
     margin-bottom: 2em;
-    font-family: 'Kristi', cursive;
     background-color: #88E6BC;
     height: 50px;
     color: salmon;
@@ -103,17 +104,7 @@ td img {
     
 }
 */
-.contact {
-    width: 97%;
-    border: 1px solid black;
-    margin-bottom: 2em;
-    margin-left: 1em;
-    margin-right: 2em;
-}
 
-.contact p {
-    padding: 1em;
-}
 
 .work p {
     padding: 1em;
@@ -171,6 +162,82 @@ h2 {
     height: 300px;
     border: 1px solid black;
 }
+
+.contact {
+    width: 97%;
+    border: 1px solid black;
+    margin-bottom: 2em;
+    margin-left: 1em;
+    margin-right: 2em;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--contentfont);
+    font-size: 30px;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+}
+
+.contactsection {
+    display: flex;
+    border: 1px solid black;
+
+}
+
+.contactsectionright {
+    display: flex;
+    float: right;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    ;
+}
+
+label {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+#message {
+    height: 200px;
+    width: 600px;
+}
+
+#email {
+    height: 60px;
+    width: 300px;
+}
+
+button {
+    height: 50px;
+    width: 60px;
+    margin: 1rem;
+    border-radius: 10%;
+    font-family: var(--contentfont);
+}
+
+button:hover {
+    color: #33D48C;
+}
+
+.rightsection p {
+    font-family: var(--contentfont);
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+
+    /*padding-left:15rem;*/
+}
+
+.rightsection ul li {
+
+    border: solid 1px black;
+
+}
+
 
 @media screen and (max-width:768px) {
     .workdiv {
