@@ -31,7 +31,7 @@ h1 {
 commented out is the original css pattern I had in the background. I'd like to keep it there for now.  */
 .banner {
     /*background-image: radial-gradient(#33d48c 2px, transparent 2px), radial-gradient(#33d48c 2px, transparent 2px);*/
-    background-image: url("bannerbackground2.png");
+    background-image: url("");
     /*background-size: 18px 18px;*/
     /*background-position: 0 0, 9px 9px;*/
     /*background-color: #dcf8ec;*/
