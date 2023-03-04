@@ -64,7 +64,6 @@ li {
 /* You had width at 97%, a border, marginb 2em, marginL 1em, MarginR 2em*/
 .about {
     width: 100%;
-    /*border: 1px solid black;*/
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
@@ -245,19 +244,32 @@ button:hover {
     .contactsectionright {
         float:center;
     }
+    .about {
+        flex-direction: column;
+    }
 }
 
 /* double check all these things below */
 
 
-@media screen and (max-width:413px) {
+@media screen and (max-width:387px) {
     .workdiv {
-        float: none;
+        float: center;
         flex-direction: column;
         margin-bottom: 2px
     }
+
+    .contactsection {
+        float: center;
+        flex-direction:column;
+    }
+    .contactsectionright {
+        float:center;
+    }
 }
 
+
+/*
 @media screen and and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
     .workdiv {
         float: none;
@@ -276,4 +288,4 @@ button:hover {
             width: 100%;
             margin: auto; */
     }
-}
+} */
