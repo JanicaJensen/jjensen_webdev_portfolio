@@ -9,7 +9,9 @@
     --hover:#dcf8ec;
 
 }
-
+html {
+    scroll-behavior: smooth;
+}
 /*Gives the body a background color which shows through on the work section*/
 body {
     width:100%;
@@ -166,3 +168,8 @@ a:hover {
 }
 
 /*attempts to make the site responsive*/
+
+@media screen and (max-width: 516px){
+
+
+}
