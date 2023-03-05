@@ -293,4 +293,14 @@ a:hover {
     .about div {
         flex-direction: column;
     }
+    
+    #message {
+        height: 200px;
+        width: 300px;
+    }
+    
+    #email {
+        height: 60px;
+        width: 150px;
+    }
 }
