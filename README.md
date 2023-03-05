@@ -5,6 +5,7 @@
 
 
 
+
 ## Setup 
 That which is required to run the site is a browser and this URL: 
 
@@ -28,10 +29,11 @@ Something to note is that there are pseudo classes on the 3 gallery apps to make
 
 ## Errors and bugs
  
--  No footer is included due to the fact that there is nothing I could possibly put there. 
+- Chrome DEV Tools shows my media queries correctly for the specified widths, but on an actual phone, they do not show. 
+-That being said, everything works much better in live server and once ported through GH pages, seems to create hours worth of work so, just know that I got it working great on a liveserver only to have it consistently break once in GH and spent hours fixing those. 
 - The form doesn't actually work, it's decorative. Once I know how to make it work, I will. We have not yet hit that part of the curriculum. 
 - The Horiseon logo with the actual horizon/sun isn't real. 
-- If one actually navigates to the Horiseon site, clicking the links will not actually move you on the page. I believe this is a GitHub pages problem, as it works just fine in LiveServer.
+- If one actually navigates to the Horiseon site, clicking the links will not actually move you on the page. I believe this is a GitHub pages problem, as it works just fine in LiveServer.-  No footer is included due to the fact that there is nothing I could possibly put there. 
 
 ## Appearance and URL
 URL again, can be found here: 
@@ -43,8 +45,8 @@ URL again, can be found here:
 
 - Application's links all function correctly.
 
-- Application's CSS selectors and properties are consolidated 🟡 and organized to follow semantic structure✅.
-     -*I did my best with this. Some things, when removed, just messed it all up. Though some made sense to move elsewhere, when tried, they broke. They do, howeever, follow the best structure possible.*
+- Application's CSS selectors and properties are consolidated  and organized to follow semantic structure✅.
+     -*I re-wrote the entire thing at some point and got rid of anything that didn't need to be there.*
 
 - Application's CSS file is properly commented.✅
 
@@ -73,7 +75,7 @@ GIVEN I need to sample a potential employee's previous work
 WHEN I load their portfolio
 THEN I am presented with the developer's name ✅, a recent photo or avatar ✅, and links to sections about them ✅, their work✅, and how to contact them✅
 
-WHEN I click one of the links in the navigation
+WHEN I click one of the links in the navigation✅
 THEN the UI scrolls to the corresponding section
 
 WHEN I click on the link to the section about their work
@@ -87,4 +89,4 @@ THEN I am taken to that deployed application ✅
 
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport 🟡
-    - *I really did my best with this. Sometimes the items would not change upon resize, I added a viewport tag in the HTML to see if that would help and it did, somewhat, but parts of my site still don't optimize.*
+    - *I really did my best with this. The code that I input under my media screens DOES work in Chrome developer tools at those widths,however, when I get on my iPhone13mini which has a 378px width, the changes are not there are the site looks broken. I was left with the choice of giving you a site that works on desktop and that Chrome Dev Tools theoretically says works on iPhone, or, a non-dynamic site that looks nice on both actual phone, dev tools, and browser. So, I'm just giving you the one that works in browser and that dev tools shows correctly at the widths specified. If actually pulled up on phone, its not like in dev tools.*
