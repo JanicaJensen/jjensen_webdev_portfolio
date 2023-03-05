@@ -33,7 +33,7 @@ h1 {
 /*Sets the background image for the banner which is behind the site title, 
 commented out is the original css pattern I had in the background. I'd like to keep it there for now.  */
 .banner {
-    background-image: url("https://raw.githubusercontent.com/JanicaJensen/jjensen_webdev_portfolio/main/assets/bannerbackground2.png");
+    background-image: url(https://raw.githubusercontent.com/JanicaJensen/jjensen_webdev_portfolio/main/assets/bannerbackground2.png);
     background-size: cover;
     /*background-image: radial-gradient(#33d48c 2px, transparent 2px), radial-gradient(#33d48c 2px, transparent 2px);*/
     /*background-size: 18px 18px;*/
