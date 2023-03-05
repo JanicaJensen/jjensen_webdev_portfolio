@@ -43,22 +43,23 @@ URL again, can be found here:
 
 - Application's links all function correctly.
 
-- Application's CSS selectors and properties are consolidated and organized to follow semantic structure.
+- Application's CSS selectors and properties are consolidated 🟡 and organized to follow semantic structure✅.
+     -*I did my best with this. Some things, when removed, just messed it all up. Though some made sense to move elsewhere, when tried, they broke. They do, howeever, follow the best structure possible.*
 
 - Application's CSS file is properly commented.✅
 
-- Application deployed at live URL.
+- Application deployed at live URL.✅
 
-- Application loads with no errors.
+- Application loads with no errors.✅
 
-- Application GitHub URL submitted.
+- Application GitHub URL submitted.✅
 
-- GitHub repository that contains application code.
+- GitHub repository that contains application code.✅
 
-- Application resembles (at least 90%) screenshots provided in challenge instructions.
-    - Our TAs said it was OK if ours did not look like the example provided as long as it met requirements. 
+- Application resembles (at least 90%) screenshots provided in challenge instructions.✅
+    - *Our TAs said it was OK if ours did not look like the example provided as long as it met requirements. *
 
-Repository has a unique name.
+Repository has a unique name.✅
 
 Repository follows best practices for file structure and naming conventions.✅
 
@@ -66,7 +67,7 @@ Repository follows best practices for class/id naming conventions, indentation, 
 
 Repository contains multiple descriptive commit messages. ✅
 
-Repository contains a quality README file with description, screenshot, and link to deployed application.
+Repository contains a quality README file with description, screenshot, and link to deployed application.✅
 
 GIVEN I need to sample a potential employee's previous work
 WHEN I load their portfolio
@@ -76,13 +77,14 @@ WHEN I click one of the links in the navigation
 THEN the UI scrolls to the corresponding section
 
 WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications
+THEN the UI scrolls to a section with titled images of the developer's applications ✅
 
 WHEN I am presented with the developer's first application
 THEN that application's image should be larger in size than the others ✅
 
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application
+WHEN I click on the images of the applications 
+THEN I am taken to that deployed application ✅
 
 WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport
+THEN I am presented with a responsive layout that adapts to my viewport 🟡
+    - *I really did my best with this. Sometimes the items would not change upon resize, I added a viewport tag in the HTML to see if that would help and it did, somewhat, but parts of my site still don't optimize.*

@@ -5,7 +5,9 @@
     --lightblue: #598392;
 }
 
-@-ms-viewport{ width: device-width; }
+@-ms-viewport {
+    width: device-width;
+}
 
 /* This will make the scroll effect natural, though GitHub pages didn't let it work on my last project*/
 html {
@@ -55,7 +57,7 @@ a {
 /* Styles the nav bar*/
 nav {
     width: 100%;
-    margin-bottom: 2em;
+
     background-color: #598392;
     height: 60px;
     color: white;
@@ -82,6 +84,8 @@ h2 {
     font-family: 'Tilt Warp', cursive;
     color: #124559;
     text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 /* styles elements in the About section*/
@@ -188,12 +192,14 @@ form {
     width: 50%;
     text-align: center;
     justify-content: center;
+    font-family: var(--contentfont);
 
 
 }
 
 .contactsectionright p {
     padding-right: 1rem;
+    text-align: center;
 }
 
 /*Styles the lables, inputs, and button of the form WITHIN the Contactsection*/
@@ -223,10 +229,7 @@ button {
 
 
 /*Styles the right side of the Contact section since it is in 2 columns*/
-.rightsection {
-    text-align: center;
 
-}
 
 
 .rightsection p {
@@ -251,120 +254,60 @@ a:hover {
     transform: scale(1.5);
 }
 
-/* This is an attempt to optimize for phone screen width*/
-
-
-@media screen and (max-width:768px) {
-    .banner {
-       padding-bottom:7rem;
-    }
-    
-    
-    ul {
-        list-style: none;
-        width: 90%;
-        display: column;
-        justify-content: space-between;
-    }
-.about h2{
-    padding-top: 2rem;
-}
-
-    .about section {
-        margin-top: 1rem;
-    }
-.about p {
-    padding-top: 0;
-    margin-top:0;
-    font-size:15px;
-    text-align:center;
-    margin-left:3rem;
-}
-.about img {
-    padding-right:4rem;
-}
-
-    .workdiv div {
-        float: center;
-        flex-direction: column;
-        margin-bottom: 2px
-        ;
-    }
-
-.featuredapp img {
-    width: 100%;
-}
-    .contactsection {
-        float: center;
-        flex-direction: column;
-        width: 100%;
-    }
-
-
-    .contactsectionright {
-        float: center;
-        display:flex;
-        width:100%;
-        
-    }
-
-
-    .about div {
-        flex-direction: column;
-    }
-
-    #message {
-        height: 200px;
-        width: 300px;
-    }
-
-    #email {
-        height: 60px;
-        width: 150px;
-    }
-}
 
 /*This here attempts to optimize the site for different screen widths*/
 @media screen and (max-width:518px) {
     .banner {
-       padding-bottom:7rem;
+        width: 100%;
+        height: 460px;
     }
-    
-    
-    ul {
-        list-style: none;
-        width: 90%;
-        display: column;
-        justify-content: space-between;
-    }
-.about h2{
-    padding-top: 2rem;
-}
 
-    .about section {
-        margin-top: 1rem;
+    nav {
+        width: 100%;
+        margin-bottom: 2em;
+        background-color: #598392;
     }
-.about p {
-    padding-top: 0;
-    margin-top:0;
-    font-size:15px;
-    text-align:center;
-    margin-left:3rem;
-}
-.about img {
-    padding-right:4rem;
-}
 
-    .workdiv div {
+    .about {
+        margin-top: 100px;
+    }
+
+    .about div {
+        flex-direction: column;
+    }
+
+    .about p {
+        padding-top: 0;
+        margin-top: 0;
+        font-size: 15px;
+        text-align: center;
+        margin-left: 3rem;
+    }
+
+    .about img {
+        padding-right: 4rem;
+    }
+
+    .worksection {
+        display: flex;
+    }
+
+    .workdiv {
+        display: flex;
         float: center;
         flex-direction: column;
-        margin-bottom: 2px
-        ;
+        margin-bottom: 2px;
     }
 
-.featuredapp img {
-    width: 100%;
-}
+    .workdiv p {
+        flex-direction: column;
+    }
+
+
+    .featuredapp img {
+        width: 100%;
+    }
+
     .contactsection {
         float: center;
         flex-direction: column;
@@ -374,14 +317,9 @@ a:hover {
 
     .contactsectionright {
         float: center;
-        display:flex;
-        width:100%;
-        
-    }
+        display: flex;
+        width: 100%;
 
-
-    .about div {
-        flex-direction: column;
     }
 
     #message {
@@ -394,4 +332,3 @@ a:hover {
         width: 150px;
     }
 }
-
