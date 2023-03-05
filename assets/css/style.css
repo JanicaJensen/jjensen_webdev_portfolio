@@ -21,7 +21,7 @@ body {
 .banner {
     display:flex;
     flex-direction:column;
-background-image: url(/assets/bannerbackground2.png);
+background-image: url(https://raw.githubusercontent.com/JanicaJensen/jjensen_webdev_portfolio/main/assets/bannerbackground2.png);
 background-size:cover;
 width:100%;
 }
