@@ -221,6 +221,7 @@ a:hover {
     background-color:var(--navblue);
     padding: 1rem;
     margin:auto;
+    list-style:none;
     }
     
     nav a {
@@ -389,6 +390,7 @@ a:hover {
     background-color:var(--navblue);
     padding: 1rem;
     margin:auto;
+    list-style:none;
     }
     
     nav a {
