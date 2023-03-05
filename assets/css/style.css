@@ -191,7 +191,7 @@ form {
 }
 
 .contactsectionright p {
-    padding-right: 1rem; 
+    padding-right: 1rem;
 }
 
 /*Styles the lables, inputs, and button of the form WITHIN the Contactsection*/
@@ -223,7 +223,7 @@ button {
 /*Styles the right side of the Contact section since it is in 2 columns*/
 .rightsection {
     text-align: center;
-    
+
 }
 
 
@@ -233,7 +233,7 @@ button {
     text-align: center;
     font-weight: bold;
     align-items: center;
-    
+
 }
 
 /*These are some pseudo elements for hover effects*/
@@ -293,14 +293,71 @@ a:hover {
     .about div {
         flex-direction: column;
     }
-    
+
     #message {
         height: 200px;
         width: 300px;
     }
-    
+
     #email {
         height: 60px;
         width: 150px;
     }
+}
+
+/* my iphone */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    .workdiv {
+        float: none;
+        flex-direction: column;
+        margin-bottom: 2px
+    }
+
+    .contactsection {
+        float: center;
+        flex-direction: column;
+    }
+
+    .contactsectionright {
+        float: center;
+    }
+
+    .about div {
+        flex-direction: column;
+    }
+}
+
+/* This is an attempt to optimize for phone screen width*/
+
+
+@media screen and (max-width:375px) {
+    .workdiv div {
+        float: center;
+        flex-direction: column;
+        margin-bottom: 2px
+    }
+
+    .contactsection {
+        float: center;
+        flex-direction: column;
+    }
+
+    .contactsectionright {
+        float: center;
+    }
+
+    .about div {
+        flex-direction: column;
+    }
+
+    #message {
+        height: 200px;
+        width: 300px;
+    }
+
+    #email {
+        height: 60px;
+        width: 150px;
+    }
+
 }
