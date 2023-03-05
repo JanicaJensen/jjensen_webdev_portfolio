@@ -1,4 +1,5 @@
 /* Some color and font options are kept here at root*/
+/* Some color and font options are kept here at root*/
 :root {
     --contentfont: 'Sarabun', sans-serif;
     --hover: #eff6e0;
@@ -256,30 +257,26 @@ a:hover {
 
 
 /*This here attempts to optimize the site for different screen widths*/
-@media screen and (min-width:375px) and (max-width:768px) {
+@media screen and (min-width:375px) and (max-width:518px) {
     .banner {
-        width: 110%;
+        width: 100%;
         height: 460px;
     }
 
     nav {
-        width: 95%;
+        width: 100%;
         margin-bottom: 2em;
         background-color: #598392;
     }
 
     .about {
         margin-top: 100px;
-        width:110%;
     }
 
     .about div {
         flex-direction: column;
-        align-items: center;
-        font-size: 15px;
-
     }
-/*
+
     .about p {
         padding-top: 0;
         margin-top: 0;
@@ -291,7 +288,7 @@ a:hover {
     .about img {
         padding-right: 4rem;
     }
-*/
+
     .worksection {
         display: flex;
     }
@@ -311,13 +308,11 @@ a:hover {
     .featuredapp img {
         width: 100%;
     }
-.contact {
-    width: 110%;
-}
+
     .contactsection {
         float: center;
         flex-direction: column;
-        width: 80%;
+        width: 100%;
     }
 
 
@@ -330,7 +325,7 @@ a:hover {
 
     #message {
         height: 200px;
-        width: 200px;
+        width: 300px;
     }
 
     #email {
