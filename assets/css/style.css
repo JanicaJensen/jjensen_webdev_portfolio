@@ -66,20 +66,16 @@ ul {
     width: 90%;
     display: flex;
     justify-content: space-between;
-    color: salmon;
 }
 
 li {
     font-size: 30px;
     font-family: 'Tilt Warp', cursive;
     padding: 10px;
-    color: salmon;
 }
 
 /*styles all h2s over the body sections*/
 h2 {
-    /*padding-left: 2em;
-    padding-top: 1em;*/
     font-size: 60px;
     font-family: 'Tilt Warp', cursive;
     color: #124559;
@@ -243,6 +239,7 @@ a:hover {
 }
 
 /*This here attempts to optimize the site for different screen widths*/
+
 @media screen and (max-width:768px) {
     .workdiv {
         float: none;
@@ -267,8 +264,8 @@ a:hover {
 /* This is an attempt to optimize for phone screen width*/
 
 
-@media screen and (max-width:387px) {
-    .workdiv {
+@media screen and (max-width:480px) {
+    .workdiv div {
         float: center;
         flex-direction: column;
         margin-bottom: 2px
