@@ -159,9 +159,7 @@ h2 {
 /* Styles the Contact section*/
 .contact {
     width: 100%;
-    margin-bottom: 2em;
-    margin-left: 1em;
-    margin-right: 2em;
+    padding-bottom:2rem;
     background-color: #1b4965;
     color: #dcf8ec;
 }
@@ -191,6 +189,10 @@ form {
     width: 50%;
     text-align: center;
     justify-content: center;
+}
+
+.contactsectionright p {
+    padding-right: 1rem;
 }
 
 /*Styles the lables, inputs, and button of the form WITHIN the Contactsection*/
