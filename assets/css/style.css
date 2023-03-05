@@ -1,245 +1,152 @@
-
-/* Some color and font options are kept here at root*/
+/* definesroot properties*/
 :root {
+    --headerfont:'Tilt Warp', cursive;
+    --darkblue: #124559;
+    --background: #dcf8ec;
+    --midblue: #A5D8E8;
+    --navblue:#598392;
     --contentfont: 'Sarabun', sans-serif;
-    --hover: #eff6e0;
-    --lightblue: #598392;
+    --hover:#dcf8ec;
+
 }
 
-@-ms-viewport {
-    width: device-width;
-}
-
-/* This will make the scroll effect natural, though GitHub pages didn't let it work on my last project*/
-html {
-    scroll-behavior: smooth;
-}
-
-/* Setting background color and margin*/
+/*Gives the body a background color which shows through on the work section*/
 body {
-    margin: 0;
-    background-color: #dcf8ec;
+    width:100%;
+    height:100%;
+    background-color: var(--background);
 }
 
-/* Styles the h1 tag- the site title*/
-h1 {
-    text-align: center;
-    margin-bottom: 1em;
-    margin-top: 0;
-    padding-top: 3rem;
-    font-size: 100px;
-    color: #124559;
-    /* this is a google font*/
-    font-family: 'Tilt Warp', cursive;
-    vertical-align: middle;
-
-}
-
-/*Sets the background image for the banner which is behind the site title, 
-commented out is the original css pattern I had in the background. I'd like to keep it there for now.  */
+/*Links the background image to the banner*/
 .banner {
-    background-image: url(https://raw.githubusercontent.com/JanicaJensen/jjensen_webdev_portfolio/main/assets/bannerbackground2.png);
-    background-size: cover;
-    /*background-image: radial-gradient(#33d48c 2px, transparent 2px), radial-gradient(#33d48c 2px, transparent 2px);*/
-    /*background-size: 18px 18px;*/
-    /*background-position: 0 0, 9px 9px;*/
-    /*background-color: #dcf8ec;*/
-    height: 300px;
-    width: 100%;
-
+    display:flex;
+    flex-direction:column;
+background-image: url(/assets/bannerbackground2.png);
+background-size:cover;
+width:100%;
 }
 
-/* Makes sure the links don't show up as an ugly color*/
-a {
+/*styles the h1 header for the title of page*/
+h1 {
+   text-align:center;
+   font-family:var(--headerfont);
+   color:var(--darkblue);
+   font-size:90px;
+   padding-top: 5rem;
+   padding-bottom: 2rem;
+    /* this is a google font*/
+}
+
+/*styles the navigation parts*/
+nav ul {
+display:flex;
+justify-content: space-around;
+font-family: var(--headerfont);
+font-size: 40px;
+background-color:var(--navblue);
+padding: 1rem;
+margin:auto;
+}
+
+nav a {
     text-decoration: none;
-    color: #01161e;
+    color:var(--darkblue)
 }
 
-/* Styles the nav bar*/
-nav {
-    width: 100%;
-
-    background-color: #598392;
-    height: 60px;
-    color: white;
-}
-
-
-/* Styles the list that makes up the nav bar */
-ul {
-    list-style: none;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-}
-
-li {
-    font-size: 30px;
-    font-family: 'Tilt Warp', cursive;
-    padding: 10px;
-}
-
-/*styles all h2s over the body sections*/
+/*Gives default styles to all H2 headers in page*/
 h2 {
+    text-align:center;
+    font-family: var(--headerfont);
+    color:var(--darkblue);
     font-size: 60px;
-    font-family: 'Tilt Warp', cursive;
-    color: #124559;
-    text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top:3rem;
 }
 
-/* styles elements in the About section*/
-.about {
-    width: 100%;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    background-color: #A5D8E8;
-
-}
-
-.about div {
-    display: flex;
-}
-
-.about img {
-    height: 400px;
-    padding-right: 2rem;
-    padding-left: 6rem;
-}
-
-.about p {
-    padding-left: 3em;
-    padding-bottom: 2em;
-    padding-top: 3rem;
-    font-size: 30px;
-    font-family: 'Sarabun', sans-serif;
-    width: 60%;
-}
-
-/*Styles elements in the Work section*/
-
-.work p {
-    padding: 1em;
-}
-
-
-.worksection {
-    width: 100%;
-    margin-bottom: 2em;
-    margin-left: 1em;
-    margin-right: 2em;
-    display: flex;
+/*styles the about section */
+.aboutsection {
+    display:flex;
     flex-direction: column;
-}
-
-
-.workdiv {
-    display: flex;
-    justify-content: space-around;
     text-align: center;
-    margin-bottom: 2em;
+    background-color:var(--midblue);
+}
+.aboutsection div {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.workdiv p {
-    font-family: 'Tilt Warp', cursive;
-    font-size: 20px;
+.aboutsection p {
+    float:left;
+    width:50%;
+    text-align:center;
+    font-family: var(--contentfont);
+    font-size: 30px;
+}
+.aboutsection img {
+    width:20%;
+    padding: 2rem;
 }
 
-.workdiv img {
-    width: 300px;
-    height: 300px;
+/*styles the work section*/
+.worksection {
+    text-align: center;
+    font-size: 30px;
 }
 
-/*Sets dimensions for the featured app img*/
-.featuredapp {
-    height: 300px;
-    width: 100%;
+/*styles the apps div in the work section*/
+.apps {
+    display:flex;
+    justify-content:space-around;
+    font-family: var(--headerfont);
+    color:var(--darkblue);
+    font-size:30px;
+}
+.apps a {
+    text-decoration: none;
+    color: var(--darkblue)
 }
 
-/* Styles the Contact section*/
+/* styles the contact section*/
 .contact {
-    width: 100%;
-    padding-bottom: 2rem;
-    background-color: #1b4965;
-    color: #dcf8ec;
+    background-color: var(--darkblue);
+    
 }
 
 .contact h2 {
-    padding-top: 6rem;
-    color: #dcf8ec;
+    color:var(--background);
+}
+
+.contact a {
+    text-decoration: none;
+    color: var(--navblue)
+    font-weight:bold;
 }
 
 .contactsection {
-    display: flex;
-    justify-content: center;
+display:flex;
+justify-content: space-around;
+font-family: var(--contentfont);
+font-size: 30px;
+font-weight:bold;
+color:var(--midblue)
 }
 
-/*styles the form in the Contact section*/
-form {
-    display: flex;
-    flex-direction: column;
-    font-family: var(--contentfont);
-    font-size: 30px;
-    padding-left: 7rem;
-    padding-bottom: 1rem;
-}
-
-.contactsectionright {
-    display: flex;
-    float: right;
-    width: 50%;
-    text-align: center;
-    justify-content: center;
-    font-family: var(--contentfont);
-
-
-}
-
-.contactsectionright p {
-    padding-right: 1rem;
-    text-align: center;
-}
-
-/*Styles the lables, inputs, and button of the form WITHIN the Contactsection*/
-label {
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-}
-
+/*styles the text input boxes in the form*/
 #message {
-    height: 200px;
-    width: 600px;
+    width:100%;
+    height:6rem;
+    margin:2rem;
 }
 
 #email {
-    height: 60px;
-    width: 300px;
+    width:30%;
+    height: 2rem;
+    margin:2rem;
 }
 
 button {
-    height: 50px;
-    width: 60px;
-    margin: 1rem;
-    border-radius: 10%;
-    background-color: var(--lightblue);
+    padding: .5rem;
     font-family: var(--contentfont);
-}
-
-
-/*Styles the right side of the Contact section since it is in 2 columns*/
-
-
-
-.rightsection p {
-    font-family: var(--contentfont);
-    font-size: 30px;
-    text-align: center;
-    font-weight: bold;
-    align-items: center;
-
 }
 
 /*These are some pseudo elements for hover effects*/
@@ -250,164 +157,12 @@ button:hover {
 a:hover {
     color: var(--hover)
 }
+.apps a:hover {
+    color:var(--navblue)
+}
 
-.specialimg:hover {
+.apps img:hover {
     transform: scale(1.5);
 }
 
-
-/*This here attempts to optimize the site for different screen widths*/
-@media screen and (max-width:518px) {
-    .banner {
-        width: 100%;
-        height: 460px;
-    }
-
-    nav {
-        width: 100%;
-        margin-bottom: 2em;
-        background-color: #598392;
-    }
-
-    .about {
-        margin-top: 100px;
-    }
-
-    .about div {
-        flex-direction: column;
-    }
-
-    .about p {
-        padding-top: 0;
-        margin-top: 0;
-        font-size: 15px;
-        text-align: center;
-        margin-left: 3rem;
-    }
-
-    .about img {
-        padding-right: 4rem;
-    }
-
-    .worksection {
-        display: flex;
-    }
-
-    .workdiv {
-        display: flex;
-        float: center;
-        flex-direction: column;
-        margin-bottom: 2px;
-    }
-
-    .workdiv p {
-        flex-direction: column;
-    }
-
-
-    .featuredapp img {
-        width: 100%;
-    }
-
-    .contactsection {
-        float: center;
-        flex-direction: column;
-        width: 100%;
-    }
-
-
-    .contactsectionright {
-        float: center;
-        display: flex;
-        width: 100%;
-
-    }
-
-    #message {
-        height: 200px;
-        width: 300px;
-    }
-
-    #email {
-        height: 60px;
-        width: 150px;
-    }
-}
-
-
-media screen and (max-width:375px) {
-    .banner {
-        width: 100%;
-        height: 460px;
-    }
-
-    nav {
-        width: 100%;
-        margin-bottom: 2em;
-        background-color: #598392;
-    }
-
-    .about {
-        margin-top: 100px;
-    }
-
-    .about div {
-        flex-direction: column;
-    }
-
-    .about p {
-        padding-top: 0;
-        margin-top: 0;
-        font-size: 15px;
-        text-align: center;
-        margin-left: 3rem;
-    }
-
-    .about img {
-        padding-right: 4rem;
-    }
-
-    .worksection {
-        display: flex;
-    }
-
-    .workdiv {
-        display: flex;
-        float: center;
-        flex-direction: column;
-        margin-bottom: 2px;
-    }
-
-    .workdiv p {
-        flex-direction: column;
-    }
-
-
-    .featuredapp img {
-        width: 100%;
-    }
-
-    .contactsection {
-        float: center;
-        flex-direction: column;
-        width: 100%;
-    }
-
-
-    .contactsectionright {
-        float: center;
-        display: flex;
-        width: 100%;
-
-    }
-
-    #message {
-        height: 200px;
-        width: 300px;
-    }
-
-    #email {
-        height: 60px;
-        width: 150px;
-    }
-}
+/*attempts to make the site responsive*/
