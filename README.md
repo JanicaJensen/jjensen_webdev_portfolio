@@ -7,7 +7,7 @@
 
 
 ## Setup 
-That which is required to run the site is a browser and this URL: 
+That which is required to run the site is a browser and this URL: https://janicajensen.github.io/jjensen_webdev_portfolio/
 
 
 ## Usage
@@ -36,7 +36,7 @@ Something to note is that there are pseudo classes on the 3 gallery apps to make
 - If one actually navigates to the Horiseon site, clicking the links will not actually move you on the page. I believe this is a GitHub pages problem, as it works just fine in LiveServer.-  No footer is included due to the fact that there is nothing I could possibly put there. 
 
 ## Appearance and URL
-URL again, can be found here: 
+URL again, can be found here: https://janicajensen.github.io/jjensen_webdev_portfolio/
 ![](assets/app%20screenshot%201.png)
 ![](assets/app%20screenshot%202.png)
 
