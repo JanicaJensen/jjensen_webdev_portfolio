@@ -263,7 +263,7 @@ a:hover {
     }
 
     nav {
-        width: 99%;
+        width: 95%;
         margin-bottom: 2em;
         background-color: #598392;
     }
@@ -275,8 +275,11 @@ a:hover {
 
     .about div {
         flex-direction: column;
-    }
+        align-items: center;
+        font-size: 15px;
 
+    }
+/*
     .about p {
         padding-top: 0;
         margin-top: 0;
@@ -288,7 +291,7 @@ a:hover {
     .about img {
         padding-right: 4rem;
     }
-
+*/
     .worksection {
         display: flex;
     }
