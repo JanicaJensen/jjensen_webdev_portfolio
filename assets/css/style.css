@@ -155,7 +155,7 @@ h2 {
 /* Styles the Contact section*/
 .contact {
     width: 100%;
-    padding-bottom:2rem;
+    padding-bottom: 2rem;
     background-color: #1b4965;
     color: #dcf8ec;
 }
@@ -167,6 +167,7 @@ h2 {
 
 .contactsection {
     display: flex;
+    justify-content: center;
 }
 
 /*styles the form in the Contact section*/
@@ -185,10 +186,12 @@ form {
     width: 50%;
     text-align: center;
     justify-content: center;
+
+
 }
 
 .contactsectionright p {
-    padding-right: 1rem;
+    padding-right: 1rem; 
 }
 
 /*Styles the lables, inputs, and button of the form WITHIN the Contactsection*/
@@ -218,11 +221,19 @@ button {
 
 
 /*Styles the right side of the Contact section since it is in 2 columns*/
+.rightsection {
+    text-align: center;
+    
+}
+
+
 .rightsection p {
     font-family: var(--contentfont);
     font-size: 30px;
     text-align: center;
     font-weight: bold;
+    align-items: center;
+    
 }
 
 /*These are some pseudo elements for hover effects*/
@@ -239,7 +250,6 @@ a:hover {
 }
 
 /*This here attempts to optimize the site for different screen widths*/
-
 @media screen and (max-width:768px) {
     .workdiv {
         float: none;
@@ -264,7 +274,7 @@ a:hover {
 /* This is an attempt to optimize for phone screen width*/
 
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:375px) {
     .workdiv div {
         float: center;
         flex-direction: column;
