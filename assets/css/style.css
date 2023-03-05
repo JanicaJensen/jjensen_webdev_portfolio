@@ -1,4 +1,4 @@
-/* Some color and font options are kept here at root*/
+
 /* Some color and font options are kept here at root*/
 :root {
     --contentfont: 'Sarabun', sans-serif;
@@ -257,7 +257,7 @@ a:hover {
 
 
 /*This here attempts to optimize the site for different screen widths*/
-@media screen and (min-width:375px) and (max-width:518px) {
+@media screen and (max-width:518px) {
     .banner {
         width: 100%;
         height: 460px;
