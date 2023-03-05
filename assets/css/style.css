@@ -256,20 +256,21 @@ a:hover {
 
 
 /*This here attempts to optimize the site for different screen widths*/
-@media screen and (max-width:518px) {
+@media screen and (min-width:375px) and (max-width:768px) {
     .banner {
-        width: 100%;
+        width: 110%;
         height: 460px;
     }
 
     nav {
-        width: 100%;
+        width: 99%;
         margin-bottom: 2em;
         background-color: #598392;
     }
 
     .about {
         margin-top: 100px;
+        width:110%;
     }
 
     .about div {
@@ -307,11 +308,13 @@ a:hover {
     .featuredapp img {
         width: 100%;
     }
-
+.contact {
+    width: 110%;
+}
     .contactsection {
         float: center;
         flex-direction: column;
-        width: 100%;
+        width: 80%;
     }
 
 
@@ -324,7 +327,7 @@ a:hover {
 
     #message {
         height: 200px;
-        width: 300px;
+        width: 200px;
     }
 
     #email {
