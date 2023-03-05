@@ -5,6 +5,8 @@
     --lightblue: #598392;
 }
 
+@-ms-viewport{ width: device-width; }
+
 /* This will make the scroll effect natural, though GitHub pages didn't let it work on my last project*/
 html {
     scroll-behavior: smooth;
@@ -120,7 +122,7 @@ h2 {
 
 
 .worksection {
-    width: 97%;
+    width: 100%;
     margin-bottom: 2em;
     margin-left: 1em;
     margin-right: 2em;
@@ -249,46 +251,63 @@ a:hover {
     transform: scale(1.5);
 }
 
-/*This here attempts to optimize the site for different screen widths*/
+/* This is an attempt to optimize for phone screen width*/
+
+
 @media screen and (max-width:768px) {
-    .workdiv {
-        float: none;
-        flex-direction: column;
-        margin-bottom: 2px
+    .banner {
+       padding-bottom:7rem;
     }
-
-    .contactsection {
-        float: center;
-        flex-direction: column;
+    
+    
+    ul {
+        list-style: none;
+        width: 90%;
+        display: column;
+        justify-content: space-between;
     }
-
-    .contactsectionright {
-        float: center;
-    }
-
-    .about div {
-        flex-direction: column;
-    }
+.about h2{
+    padding-top: 2rem;
 }
 
-/* This is an attempt to optimize for phone screen width*/
+    .about section {
+        margin-top: 1rem;
+    }
+.about p {
+    padding-top: 0;
+    margin-top:0;
+    font-size:15px;
+    text-align:center;
+    margin-left:3rem;
+}
+.about img {
+    padding-right:4rem;
+}
 
-
-@media screen and (max-width:375px) {
     .workdiv div {
         float: center;
         flex-direction: column;
         margin-bottom: 2px
+        ;
     }
 
+.featuredapp img {
+    width: 100%;
+}
     .contactsection {
         float: center;
         flex-direction: column;
+        width: 100%;
     }
+
 
     .contactsectionright {
         float: center;
+        display:flex;
+        width:100%;
+        
     }
+
 
     .about div {
         flex-direction: column;
@@ -305,46 +324,61 @@ a:hover {
     }
 }
 
-/* my iphone */
-@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-    .workdiv {
-        float: none;
-        flex-direction: column;
-        margin-bottom: 2px
+/*This here attempts to optimize the site for different screen widths*/
+@media screen and (max-width:518px) {
+    .banner {
+       padding-bottom:7rem;
     }
-
-    .contactsection {
-        float: center;
-        flex-direction: column;
+    
+    
+    ul {
+        list-style: none;
+        width: 90%;
+        display: column;
+        justify-content: space-between;
     }
-
-    .contactsectionright {
-        float: center;
-    }
-
-    .about div {
-        flex-direction: column;
-    }
+.about h2{
+    padding-top: 2rem;
 }
 
-/* This is an attempt to optimize for phone screen width*/
+    .about section {
+        margin-top: 1rem;
+    }
+.about p {
+    padding-top: 0;
+    margin-top:0;
+    font-size:15px;
+    text-align:center;
+    margin-left:3rem;
+}
+.about img {
+    padding-right:4rem;
+}
 
-
-@media screen and (max-width:375px) {
     .workdiv div {
         float: center;
         flex-direction: column;
         margin-bottom: 2px
+        ;
     }
 
+.featuredapp img {
+    width: 100%;
+}
     .contactsection {
         float: center;
         flex-direction: column;
+        width: 100%;
     }
+
 
     .contactsectionright {
         float: center;
+        display:flex;
+        width:100%;
+        
     }
+
 
     .about div {
         flex-direction: column;
@@ -359,5 +393,5 @@ a:hover {
         height: 60px;
         width: 150px;
     }
-
 }
+
