@@ -343,3 +343,167 @@ a:hover {
     
 
 }
+
+
+/*attempts to make the site responsive*/
+
+@media screen and (max-width: 378px){
+
+    body {
+        width:100%;
+        height:100%;
+        background-color: var(--background);
+    }
+    
+    /*Links the background image to the banner*/
+    .banner {
+    display:flex;
+    flex-direction:column;
+    background-image: url(https://raw.githubusercontent.com/JanicaJensen/jjensen_webdev_portfolio/main/assets/bannerbackground2.png);
+    background-size:cover;
+    width:100%;
+    }
+    
+    /*styles the h1 header for the title of page*/
+    h1 {
+       text-align:center;
+       font-family:var(--headerfont);
+       color:var(--darkblue);
+       font-size:90px;
+       padding-top: 5rem;
+       padding-bottom: 2rem;
+        /* this is a google font*/
+    }
+    
+    /*styles the navigation parts*/
+    nav ul {
+    display:flex;
+    justify-content: space-around;
+    font-family: var(--headerfont);
+    font-size: 40px;
+    background-color:var(--navblue);
+    padding: 1rem;
+    margin:auto;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color:var(--darkblue)
+    }
+    
+    /*Gives default styles to all H2 headers in page*/
+    h2 {
+        text-align:center;
+        font-family: var(--headerfont);
+        color:var(--darkblue);
+        font-size: 60px;
+        padding-top:3rem;
+    }
+    
+    /*styles the about section */
+    .aboutsection {
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        background-color:var(--midblue);
+    }
+    .aboutsection div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .aboutsection p {
+        float:left;
+        width:50%;
+        text-align:center;
+        font-family: var(--contentfont);
+        font-size: 30px;
+    }
+    .aboutsection img {
+        width:20%;
+        padding: 2rem;
+    }
+    
+    /*styles the work section*/
+    .worksection {
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    /*styles the apps div in the work section*/
+    .apps {
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        font-family: var(--headerfont);
+        color:var(--darkblue);
+        font-size:30px;
+    }
+    .apps a {
+        text-decoration: none;
+        color: var(--darkblue)
+    }
+    
+    /* styles the contact section*/
+    .contact {
+        background-color: var(--darkblue);
+        
+    }
+    
+    .contact h2 {
+        color:var(--background);
+    }
+    
+    .contact a {
+        text-decoration: none;
+        color: var(--navblue)
+        font-weight:bold;
+    }
+    
+    .contactsection {
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;;
+    font-family: var(--contentfont);
+    font-size: 30px;
+    font-weight:bold;
+    color:var(--midblue)
+    }
+    
+    /*styles the text input boxes in the form*/
+    #message {
+        width:100%;
+        height:6rem;
+        margin:2rem;
+    }
+    
+    #email {
+        width:30%;
+        height: 2rem;
+        margin:2rem;
+    }
+    
+    button {
+        padding: .5rem;
+        font-family: var(--contentfont);
+    }
+    
+    /*These are some pseudo elements for hover effects*/
+    button:hover {
+        color: var(--hover);
+    }
+    
+    a:hover {
+        color: var(--hover)
+    }
+    .apps a:hover {
+        color:var(--navblue)
+    }
+    
+    .apps img:hover {
+        transform: scale(1.5);
+    }
+    
+
+}
