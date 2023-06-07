@@ -188,8 +188,12 @@ a:hover {
 
 h4 {
     font-family: var(--contentfont);
+    hover:
 }
 
+h4:hover {
+    color: var(--navblue)
+}
 
 
 
